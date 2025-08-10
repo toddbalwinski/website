@@ -1,13 +1,15 @@
-export default function Motif({ className = '' }: { className?: string }) {
+export default function Motif({ className = "" }: { className?: string }) {
   return (
-    <div className={`pointer-events-none absolute inset-0 -z-10 overflow-hidden ${className}`} aria-hidden>
-      <div className="absolute -top-24 -right-24 h-72 w-72 rounded-full bg-slate-200/50 blur-3xl" />
-      <div className="absolute -bottom-24 -left-16 h-80 w-80 rounded-full bg-teal-600/10 blur-3xl" />
-      <div className="absolute top-1/3 -right-28 rotate-12 opacity-10">
-        <svg width="280" height="180" viewBox="0 0 280 180" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M0 180 L140 0 L280 180 Z" className="fill-slate-300" />
-        </svg>
-      </div>
+    <div
+      className={`pointer-events-none absolute inset-0 -z-10 overflow-hidden ${className}`}
+      aria-hidden
+    >
+      {/* Top-left blurred circle */}
+      <div className="absolute -top-[25%] -left-[10%] h-[28rem] w-[28rem] rounded-full bg-gray-200/60 blur-3xl" />
+      {/* Bottom-right blurred circle */}
+      <div className="absolute -bottom-[30%] -right-[15%] h-[36rem] w-[36rem] rounded-full bg-teal-600/20 blur-3xl" />
+      {/* Diagonal grid overlay */}
+      <div className="absolute inset-0 bg-[repeating-linear-gradient(135deg,rgba(2,6,23,0.05)_0,rgba(2,6,23,0.05)_1px,transparent_1px,transparent_24px)] opacity-25" />
     </div>
   );
 }
