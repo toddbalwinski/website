@@ -67,7 +67,7 @@ export default function Page() {
           </div>
           <a
             href="/blog"
-            className="flex items-center justify-center rounded-2xl border border-slate-200 bg-white shadow-sm transition-shadow duration-300 hover:shadow-md text-base font-semibold text-slate-800 px-4 py-6 col-span-1"
+            className="flex items-center justify-center rounded-2xl border border-slate-200 bg-white shadow-sm transition-shadow duration-300 hover:shadow-md text-base font-semibold text-slate-800 px-4 py-6 col-span-3 md:col-span-1"
             style={{ minHeight: '100%' }}
           >
             View all posts
@@ -77,18 +77,16 @@ export default function Page() {
 
       {/* Projects Highlights */}
       <Section id="projects" className="py-8 md:py-12">
-        <div className="flex items-center justify-end mb-4">
-          <h2 className="font-serif text-2xl font-semibold tracking-tight">Featured Projects</h2>
-        </div>
+        <h2 className="font-serif text-2xl font-semibold tracking-tight mb-4 text-left md:text-right">Featured Projects</h2>
         <div className="mt-6 grid gap-5 md:grid-cols-4">
           <a
             href="/projects"
-            className="flex items-center justify-center rounded-2xl border border-slate-200 bg-white shadow-sm transition-shadow duration-300 hover:shadow-md text-base font-semibold text-slate-800 px-4 py-6 col-span-1"
+            className="flex items-center justify-center rounded-2xl border border-slate-200 bg-white shadow-sm transition-shadow duration-300 hover:shadow-md text-base font-semibold text-slate-800 px-4 py-6 md:col-span-1 order-2 md:order-1"
             style={{ minHeight: '100%' }}
           >
             View all projects
           </a>
-          <div className="col-span-3 grid gap-5 md:grid-cols-2">
+          <div className="md:col-span-3 grid gap-5 md:grid-cols-2 order-1 md:order-2">
             <a href={projects[0].link} className="block" target="_blank" rel="noopener noreferrer">
               <Card
                 title={projects[0].name}
