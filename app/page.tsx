@@ -117,7 +117,7 @@ export default function Page() {
             </div>
             <div className="flex flex-wrap items-center gap-5 text-sm">
               <a href="mailto:tbalwinski@gmail.com" className="inline-flex items-center gap-2 hover:text-white"><Mail size={16}/> tbalwinski@gmail.com</a>
-              <a href="tel:+5715219973" className="inline-flex items-center gap-2 hover:text-white"><Phone size={16}/> (571) 521-9973</a>
+              <a href="tel:+15715219973" className="inline-flex items-center gap-2 hover:text-white"><Phone size={16}/> (571) 521-9973</a>
               <a href="https://www.linkedin.com/in/todd-balwinski/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 hover:text-white"><Linkedin size={16}/> LinkedIn</a>
               <a href="https://github.com/toddbalwinski" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 hover:text-white"><Github size={16}/> GitHub</a>
               {/* <a href="#resume" className={`inline-flex items-center gap-2 hover:text-white ${POP}`}>eslint-disable-next-line react/jsx-no-comment-textnodes<span className="font-medium">Resume</span></a> */}
