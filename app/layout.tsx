@@ -1,7 +1,7 @@
 import './globals.css';
 import { ReactNode } from 'react';
 
-import Motif from "../components/Motif";
+import Motif from "../app/components/Motif";
 
 export const metadata = {
   title: 'Todd Balwinski — Portfolio & Blog',

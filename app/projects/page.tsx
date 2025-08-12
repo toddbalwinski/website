@@ -1,7 +1,7 @@
 "use client";
-import Motif from "../../components/Motif";
-import Card from "../../components/Card";
-import Section from "../../components/Section";
+import Motif from "../../app/components/Motif";
+import Card from "../../app/components/Card";
+import Section from "../../app/components/Section";
 import { projects } from "../projectsData";
 import { useState, useMemo, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
@@ -47,7 +47,7 @@ export default function ProjectsPage() {
             Back to Home Page
           </a>
         </div>
-  {/* Subtitle removed as requested */}
+        <p className="text-slate-600 mb-6">A selection of my work, with filtering by tag.</p>
         <div className="flex flex-wrap gap-2 mb-4">
           <button
             className={`rounded-full px-3 py-1 text-sm border ${!selectedTag ? "bg-slate-800 text-white" : "bg-slate-100 text-slate-800 border-slate-200"}`}
@@ -101,7 +101,7 @@ export default function ProjectsPage() {
                     </div>
                     <h3 className="mt-1 text-base font-semibold text-slate-800">{project.name}</h3>
                     <p className="mt-1 text-sm text-slate-600">{project.description}</p>
-                    <div className="mt-3 h-1 w-0 bg-slate-300 transition-all duration-300 group-hover:w-16" />
+                    <div className="mt-3 h-1 w-0 bg-slate-400 rounded-full transition-all duration-300 group-hover:w-16" />
                   </div>
                 </div>
               </motion.a>
