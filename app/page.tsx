@@ -31,14 +31,20 @@ export default function Page() {
 
             {/* Right: Portrait image */}
             <div className="order-1 md:order-2">
-              <div className="relative mx-auto aspect-[4/5] w-64 sm:w-72 md:w-80 lg:w-96 overflow-hidden rounded-3xl border border-slate-200 bg-gradient-to-br from-slate-100 via-white to-slate-100 shadow-md">
+              <motion.div
+                className="relative mx-auto aspect-[4/5] w-64 sm:w-72 md:w-80 lg:w-96 overflow-hidden rounded-3xl border border-slate-200 bg-gradient-to-br from-slate-100 via-white to-slate-100 shadow-md"
+                whileHover={{ rotate: 4, scale: 1.02 }}
+                transition={{ type: "spring", stiffness: 80, damping: 18 }}
+                style={{ willChange: "transform" }}
+              >
                 <img
                   src="/headshot.jpeg"
                   alt="Todd Balwinski headshot"
                   className="absolute inset-0 w-full h-full object-cover"
+                  style={{ willChange: "transform" }}
                 />
                 {/* <div className="absolute -top-8 -right-8 h-40 w-40 rounded-full bg-teal-600/10" /> */}
-              </div>
+              </motion.div>
             </div>
           </div>
         </Section>
@@ -106,8 +112,8 @@ export default function Page() {
         <Section className="py-10">
           <div className="flex flex-col items-start justify-between gap-6 sm:flex-row sm:items-center">
             <div className="flex items-center gap-2">
-              <div className="grid h-8 w-8 place-items-center rounded-lg bg-slate-800">
-                <img src="/tb.png" alt="TB icon" className="h-7 w-7 object-contain" style={{objectFit: 'contain'}} />
+              <div className="grid h-8 w-8 place-items-center rounded-lg bg-slate-400">
+                <img src="/tb3.svg" alt="TB icon" className="h-7 w-7 object-contain" style={{objectFit: 'contain'}} />
               </div>
               <span className="text-sm text-slate-400">Todd Balwinski — Portfolio & Blog</span>
             </div>

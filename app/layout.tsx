@@ -12,7 +12,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/tb.png" type="image/png" />
+  <link rel="icon" href="/tb3.svg" type="image/svg+xml" />
       </head>
       <body className="font-sans antialiased min-h-screen relative">
         <Motif />
