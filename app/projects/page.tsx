@@ -2,6 +2,7 @@
 import Motif from "../../app/components/Motif";
 import Card from "../../app/components/Card";
 import Section from "../../app/components/Section";
+import Image from "next/image";
 import { projects } from "../projectsData";
 import { useState, useMemo, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
@@ -91,7 +92,7 @@ export default function ProjectsPage() {
               >
                 <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition-shadow duration-300 group-hover:shadow-md">
                   <div className="aspect-video bg-slate-100 flex items-center justify-center overflow-hidden">
-                    <img src={project.image} alt={project.name} className="object-cover w-full h-full rounded-lg" />
+                    <Image src={project.image} alt={project.name} width={400} height={300} className="object-cover w-full h-full rounded-lg" />
                   </div>
                   <div className="p-4">
                     <div className="flex flex-wrap gap-2 mb-2">

@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import Image from "next/image";
 
 export default function BlogPostTrigonVP() {
   // Reading progress and sticky bar logic
@@ -50,7 +51,7 @@ export default function BlogPostTrigonVP() {
           <div className="prose prose-lg text-slate-700 [&>p]:mb-8">
             <p>When I first joined the Trigon Engineering Society at UVA, I was introduced to its three pillars: social, brotherhood, and service. All three have value, but I quickly came to believe that service is the most vital. Social events and brotherhood activities strengthen bonds within the group. <span className="not-italic">Service connects us to the broader community, grounds us in purpose, and allows us to give back to the people and institutions that shape our time at the university.</span></p>
             <figure className="flex flex-col md:flex-row md:items-center gap-4 mb-8">
-              <img src="/rake.jpeg" alt="Habitat for Humanity Rake-a-Thon" className="w-full md:w-96 rounded-lg shadow" />
+              <Image src="/rake.jpeg" alt="Habitat for Humanity Rake-a-Thon" width={800} height={600} className="w-full md:w-96 rounded-lg shadow" />
               <figcaption className="mt-2 text-sm text-slate-500 md:mt-0 md:ml-4">Habitat for Humanity Rake-a-Thon: Largest event, strong turnout and great camaraderie.</figcaption>
             </figure>
             {/* <div className="border-l-4 border-teal-600/30 pl-4 italic my-8">
@@ -67,7 +68,7 @@ export default function BlogPostTrigonVP() {
               <li><strong>Habitat for Humanity Rake-a-Thon</strong> — We joined other volunteers to rake lawns for Charlottesville residents, raising funds for local sustainable housing. This was the largest event we did and I promoted it at every weekly meeting to ensure we had strong turnout. This was an amazing event where everyone had a good time and one that I hope continues into future years.</li>
             </ul>
             <figure className="flex flex-col md:flex-row md:items-center gap-4 mb-8 mt-12">
-              <img src="/rivanna.jpeg" alt="Rivanna Trails Cleanup" className="w-full md:w-64 rounded-lg shadow" />
+              <Image src="/rivanna.jpeg" alt="Rivanna Trails Cleanup" width={600} height={450} className="w-full md:w-64 rounded-lg shadow" />
               <figcaption className="mt-2 text-sm text-slate-500 md:mt-0 md:ml-4">Rivanna Trails Cleanup: Early morning, upperclassmen only, teamwork and fun.</figcaption>
             </figure>
             <p>By the end of the semester, over 58% of our brotherhood had participated in at least one service event — a major improvement from the previous year (which I estimate to be ~20%). First-years led participation at 77%, but every class year saw gains. I tracked all attendance and event details in a central Google Sheet, breaking down participation by year and average events per member. This not only helped measure progress but also created a clear record for future vice presidents to build on.</p>

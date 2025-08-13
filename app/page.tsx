@@ -3,6 +3,7 @@
 import Section from "./components/Section";
 import Card from "./components/Card";
 import Motif from "./components/Motif";
+import Image from "next/image";
 import { projects } from "./projectsData";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
@@ -111,7 +112,7 @@ export default function Page() {
           <div className="flex flex-col items-start justify-between gap-6 sm:flex-row sm:items-center">
             <div className="flex items-center gap-2">
               <div className="grid h-8 w-8 place-items-center rounded-lg bg-slate-400">
-                <img src="/tb3.svg" alt="TB icon" className="h-7 w-7 object-contain" style={{objectFit: 'contain'}} />
+                <Image src="/tb3.svg" alt="TB icon" width={28} height={28} className="h-7 w-7 object-contain" style={{objectFit: 'contain'}} />
               </div>
               <span className="text-sm text-slate-400">Todd Balwinski — Portfolio & Blog</span>
             </div>
