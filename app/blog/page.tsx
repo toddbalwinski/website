@@ -2,7 +2,7 @@ export default function BlogPage() {
   return (
     <div className="max-w-6xl mx-auto py-16 px-6">
       <div className="flex items-center justify-between mb-6">
-        <h1 className="text-3xl font-bold">Blog</h1>
+  <h1 className="text-3xl font-bold font-serif">Blog</h1>
         <a href="/" className="px-4 py-2 rounded-full bg-slate-100 text-slate-800 font-medium border border-slate-200 shadow-sm hover:bg-slate-200 transition">Back to Home Page</a>
       </div>
       <div className="space-y-8">

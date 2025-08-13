@@ -50,10 +50,6 @@ export default function BlogPostTrigonVP() {
           <h1 id="main-title" className="text-3xl font-bold mb-6">Rebuilding a Culture of Service: My Term as Trigon Vice President</h1>
           <div className="prose prose-lg text-slate-700 [&>p]:mb-8">
             <p>When I first joined the Trigon Engineering Society at UVA, I was introduced to its three pillars: social, brotherhood, and service. All three have value, but I quickly came to believe that service is the most vital. Social events and brotherhood activities strengthen bonds within the group. <span className="not-italic">Service connects us to the broader community, grounds us in purpose, and allows us to give back to the people and institutions that shape our time at the university.</span></p>
-            <figure className="flex flex-col md:flex-row md:items-center gap-4 mb-8">
-              <Image src="/rake.jpeg" alt="Habitat for Humanity Rake-a-Thon" width={800} height={600} className="w-full md:w-96 rounded-lg shadow" />
-              <figcaption className="mt-2 text-sm text-slate-500 md:mt-0 md:ml-4">Habitat for Humanity Rake-a-Thon: Largest event, strong turnout and great camaraderie.</figcaption>
-            </figure>
             {/* <div className="border-l-4 border-teal-600/30 pl-4 italic my-8">
               “Service connects us to the broader community, grounds us in purpose, and allows us to give back to the people and institutions that shape our time at the university.”
             </div> */}
@@ -62,15 +58,26 @@ export default function BlogPostTrigonVP() {
             <p>Once elected, my original goal was to establish a recurring weekly service partnership. However when that plan did not come together, I pivoted to organizing a schedule of annual and one-time events that could build participation and set the stage for future traditions.</p>
             <p className="!mb-2">We ended up participating in:</p>
             <ul className="list-disc pl-6 space-y-2 !mt-2">
-              <li><strong>Rivanna Trails Cleanup</strong> — Our first event of the semester, held before the new first-years joined, was attended exclusively by upperclassmen. It started early, was more physically demanding than we expected, and we decided it was not something we wanted to repeat. Still, the group of 10 brothers, many of whom did not usually spend time together, made the most of it. We worked hard, joked through the morning, and went to lunch together afterward. It was great to see the society's connections to each other strengthened through service.</li>
+              <li>
+                <div className="flex flex-col md:flex-row md:items-center gap-4">
+                  <div className="flex-1">
+                    <strong>Rivanna Trails Cleanup</strong> — Our first event of the semester, held before the new first-years joined, was attended exclusively by upperclassmen. It started early, was more physically demanding than we expected, and we decided it was not something we wanted to repeat. Still, the group of 10 brothers, many of whom did not usually spend time together, made the most of it. We worked hard, joked through the morning, and went to lunch together afterward. It was great to see the society's connections to each other strengthened through service.
+                  </div>
+                    <figure className="flex-shrink-0 w-full md:w-40">
+                      <Image src="/rivanna.jpeg" alt="Rivanna Trails Cleanup" width={320} height={450} className="rounded-lg shadow w-full" />
+                      <figcaption className="mt-2 text-sm text-slate-500 text-center">Working at the Rivanna Trail cleanup</figcaption>
+                  </figure>
+                </div>
+              </li>
               <li><strong>Forest Patches Sustainability Projects</strong> — A sustainability initiative on grounds was looking for volunteers to help them plant and maintain forest pacts around the school. The work was light, the location convenient, and the atmosphere relaxed. The event was good for building up our culture, and the next vice president continued volunteering with the organization the following semester.</li>
               <li><strong>Boo Bash at the Virginia Discovery Museum</strong> — The lone existing tradition where members ran Halloween-themed activity stations at the local children’s museum. This was a great event and it was great to have some continuity with our past years.</li>
               <li><strong>Habitat for Humanity Rake-a-Thon</strong> — We joined other volunteers to rake lawns for Charlottesville residents, raising funds for local sustainable housing. This was the largest event we did and I promoted it at every weekly meeting to ensure we had strong turnout. This was an amazing event where everyone had a good time and one that I hope continues into future years.</li>
             </ul>
-            <figure className="flex flex-col md:flex-row md:items-center gap-4 mb-8 mt-12">
-              <Image src="/rivanna.jpeg" alt="Rivanna Trails Cleanup" width={600} height={450} className="w-full md:w-64 rounded-lg shadow" />
-              <figcaption className="mt-2 text-sm text-slate-500 md:mt-0 md:ml-4">Rivanna Trails Cleanup: Early morning, upperclassmen only, teamwork and fun.</figcaption>
+            <figure className="mb-8 mt-8">
+              <Image src="/rake.jpeg" alt="Habitat for Humanity Rake-a-Thon" width={1200} height={800} className="w-full rounded-lg shadow object-cover" />
+              <figcaption className="mt-3 text-sm text-slate-500 text-center">Trigon brothers at the Habitat for Humanity Rake-a-Thon</figcaption>
             </figure>
+            {/* Rivanna image now appears inline with first bullet above */}
             <p>By the end of the semester, over 58% of our brotherhood had participated in at least one service event — a major improvement from the previous year (which I estimate to be ~20%). First-years led participation at 77%, but every class year saw gains. I tracked all attendance and event details in a central Google Sheet, breaking down participation by year and average events per member. This not only helped measure progress but also created a clear record for future vice presidents to build on.</p>
             <p>Beyond the events themselves, I focused on sustainability. Leadership in Trigon changes every semester, so I created a dedicated vice president email account, documented all event contacts and logistics, and encouraged the rest of the executive board to do the same for their positions. The goal was to make it easy for future leaders to continue building on our work. I also spearheaded a new tradition of recapping your work in a meeting at the end of the semester and presenting the position and its roles to the society to help educate anyone who would like to run for the role in the future.</p>
             <p>Looking back, my time as Vice President was not defined by one large event but by the deliberate rebuilding of a culture. We increased participation, reestablished traditions, and planted the seeds for new ones. My hope is that the foundation that has been built will allow for Trigon to serve the community in bigger and better ways in the near future.</p>

@@ -40,7 +40,7 @@ export default function ProjectsPage() {
       <Motif />
       <Section className={topSpacing}>
         <div className="flex items-center justify-between mb-2">
-          <h2 className="text-2xl font-bold">Projects</h2>
+          <h2 className="text-2xl font-bold font-serif">Projects</h2>
           <a
             href="/"
             className="px-4 py-2 rounded-full bg-slate-100 text-slate-800 font-medium border border-slate-200 shadow-sm hover:bg-slate-200 transition"

@@ -64,7 +64,7 @@ export default function Page() {
                 body="Reflections on reviving Trigon's service culture and leading as Vice President."
               />
             </a>
-            <Card title="Another Featured Story" subtitle="June 2025" body="Another short intro that previews the narrative and invites recruiters to read more." />
+            <Card title="Another Featured Story" subtitle="June 2025" body="Another short intro." />
           </div>
           <a
             href="/blog"
